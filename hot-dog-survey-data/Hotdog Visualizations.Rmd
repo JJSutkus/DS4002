@@ -1,0 +1,20 @@
+---
+title: "Hotdog Graphs"
+author: "Jonathan Sutkus"
+date: "2026-01-16"
+output: pdf_document
+---
+
+```{r}
+library(ggplot2)
+hotdogs <- read.csv("C:\\Users\\jjsut\\Downloads\\Hotdog Survey (Responses) - Form Responses 1.csv")
+```
+
+```{r}
+ggplot(hotdogs, aes(x=Is.a.Hotdog.a.Sandwich., fill=What.is.your.Gender.Identity.))+geom_bar(position='dodge')
+```
+
+```{r}
+ggplot(hotdogs, aes(x=Is.a.Hotdog.a.Sandwich., fill=Year.at.UVA))+geom_bar(position='dodge')
+```
+
